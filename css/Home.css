@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  /*<==============
+        Section
+    ================>*/
+  /*<==============
+        footer
+    ================>*/
+}
+
+body nav {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font: 500;
+  font-size: 1.6rem;
+  border: none;
+}
+
+body nav .start__button {
+  cursor: pointer;
+}
+
+body nav .nav__links {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+body nav .nav__links li {
+  list-style: none;
+  margin: .5rem;
+}
+
+body nav .nav__links li a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body nav .nav__links li a:hover {
+  text-decoration: underline;
+  transition: all 0.5s 0s ease;
+}
+
+body nav button {
+  background-color: #f39c12;
+  color: #f7f9f9;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+
+body section {
+  /* border: 2px solid red; */
+}
+
+body section .container {
+  padding: 5rem 2rem;
+  background-color: #f8c291;
+}
+
+body section .container .text__boxes {
+  margin: 1rem;
+}
+
+body section .container .container__title {
+  padding: 0rem 0rem 0 0;
+  font: 500;
+  line-height: 1.3;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  /* color: #FFF005  ; */
+}
+
+body section .container .container__title span {
+  background-color: #86c0b3;
+}
+
+body section .container .container__discription {
+  width: 23rem;
+  font: 500;
+  font-size: 2rem;
+}
+
+body section .container button {
+  background-color: #f39c12;
+  color: #f7f9f9;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 3.5rem;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body section .container .btn-2 {
+  background-color: #c7bebe;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+body section .image__container img {
+  background-color: #4d83da;
+  height: 100vh;
+  width: 100vw;
+}
+
+body .second-section {
+  border: 2px solid #030303;
+}
+
+body .second-section .heading {
+  margin: 2rem;
+}
+
+body .second-section .doner-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .second-section .doner-list .doner-first {
+  margin: .9rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  box-shadow: 0px 3px 5px 0px rgba(169, 151, 151, 0.75);
+}
+
+body .second-section .doner-list .doner-first img {
+  padding: .1rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: .5rem;
+}
+
+body .second-section .doner-list .doner-first .doner-name {
+  display: block;
+  position: relative;
+  padding: 0rem;
+  margin-left: .5rem;
+  margin-top: -1rem;
+}
+
+body .second-section .doner-list .doner-first .doner-city {
+  display: block;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: -9rem;
+}
+
+body .second-section .doner-list .doner-first .date {
+  display: block;
+  position: relative;
+  margin-left: 7rem;
+  padding: .2rem;
+  border-radius: .3rem;
+}
+
+body .second-section .doner-list .doner-first .month {
+  display: block;
+}
+
+body .section-third .events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .section-third .events .event-1 {
+  box-shadow: 0px 3px 5px 0px rgba(169, 151, 151, 0.75);
+  width: 20rem;
+  margin: 1rem;
+}
+
+body .section-third .events .event-1 img {
+  height: 16rem;
+  width: 20rem;
+}
+
+body .section-third .events .event-1 .title {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+body .section-third .events .event-1 .discription {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+body .section-third .events .event-1 .dateandtime {
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body .section-third .events .event-1 .dateandtime .date {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+body .section-third .events .event-1 .dateandtime .time {
+  font-size: 1.2rem;
+}
+
+body footer {
+  background-color: #fff;
+}
+
+body footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body footer ul li {
+  margin: 0.2rem;
+  list-style: none;
+  cursor: pointer;
+  color: #000;
+}
+
+body footer ul li a {
+  color: #000;
+}
