@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+$fontstack:"Montserrat", sans-serif;
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html {
+   font-size: 62.5%;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   nav {
+      border: 2px solid black; 
+      // background-color: rgb(168, 167, 167);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      font: 500;
+      font-size: 1.6rem;
+      border: none;
+
+      .start__button {
+         cursor: pointer;
+      }
+
+      .nav__links {
+         //  border: 2px solid black;
+         margin: 1rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         list-style: none;
+         li {
+            list-style: none;
+            margin: .5rem;
+            a {
+               color: #000;
+               text-decoration: none;
+               cursor: pointer;
+            }
+            a:hover {
+               text-decoration: underline;
+               // padding: .2rem;
+               transition: all 0.5s 0s ease;
+            }
+         }
+      }
+
+      button {
+         background-color: #f39c12;
+         color: #f7f9f9;
+         padding: 10px;
+         cursor: pointer;
+         border-radius: 0.5rem;
+         border-style: none;
+      }
+   }
+
+   /*<==============
+        Section
+    ================>*/
+
+   section {
+      // height: 100vh;
+      /* border: 2px solid red; */
+      .container {
+         // width: 50%;
+         padding: 5rem 2rem;
+         background-color: #f8c291;
+         // background-color: #000;
+
+         .text__boxes {
+            margin: 1rem;
+         }
+
+         .container__title {
+            padding: 0rem 0rem 0 0;
+            font: 500;
+            line-height: 1.3;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-family: $fontstack;
+            font-weight: bold;
+            /* color: #FFF005  ; */
+
+            span {
+               background-color: rgb(134, 192, 179);
+            }
+         }
+
+         .container__discription {
+            width: 23rem;
+            font: 500;
+            font-size: 2rem;
+         }
+         button {
+            background-color: #f39c12;
+            color: #f7f9f9;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border-radius: 3.5rem;
+            border-style: none;
+            font-family: $fontstack;
+         }
+         .btn-2 {
+            background-color: rgb(199, 190, 190);
+            color: #000;
+            font-family: $fontstack;
+         }
+
+
+      }
+
+      .image__container {
+         
+         img {
+            background-color: rgb(77, 131, 218) ;
+            height: 100vh;
+            width: 100vw;
+        }
+      }
+
+   }
+
+   .second-section {
+      .heading {
+         margin: 2rem;
+      }
+      // background-color: #000;
+      border: 2px solid rgb(3, 3, 3);
+      // height: 100vh;
+      // width: 100vw;
+      .doner-list {
+         // border: 2px solid blue;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .doner-first {
+            // border: 2px solid red;
+            margin: .9rem;
+            width: 20rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5rem;
+            box-shadow: 0px 3px 5px 0px rgba(169,151,151,0.75);
+            img {
+               padding: .1rem;
+               height: 4.4rem;
+               width: 4.4rem;
+               border-radius: .5rem;
+            }
+            .doner-name {
+               display: block;
+               position:relative;
+               padding: 0rem;
+               margin-left: .5rem;
+               margin-top: -1rem;
+            }
+            .doner-city {
+               display: block;
+               position: relative;
+               margin-top: 2rem;
+               margin-left: -9rem;
+            }
+            .date {
+               // border: 1px solid red;
+               display: block;
+               position: relative;
+               margin-left: 7rem;
+               padding: .2rem;
+               border-radius: .3rem;
+            }
+            .month {
+               display: block;
+            }
+         }
+      }
+   }
+
+   .section-third {
+      .events {
+         // border: 2px solid blue;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .event-1 {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            // border: 1px solid red;
+            box-shadow: 0px 3px 5px 0px rgba(169,151,151,0.75);
+            width: 20rem;
+            margin: 1rem;
+            img {
+               height: 16rem;
+               width: 20rem;
+            }
+            .title {
+               margin: 1rem;
+               font-size: 1.6rem;
+            }
+            .discription {
+               margin: 1rem;
+               font-size: 1.4rem;
+            }
+            .dateandtime {
+               // border: 1px solid red;
+               padding: .5rem;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               align-items: center;
+               .date {
+                  margin-right: 1rem;
+                  font-size: 1.2rem;
+               }
+               .time {
+                  font-size: 1.2rem;
+                  // margin: -2.3rem -6rem 2rem 9rem;
+               }
+            }
+
+   
+         }
+
+      }
+
+
+
+   }
+
+   /*<==============
+        footer
+    ================>*/
+
+   footer {
+      background-color: #fff;
+      ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         li {
+            margin: 0.2rem;
+            list-style: none;
+            cursor: pointer;
+            color: #000;
+            a {
+               color: #000;
+            }
+         }
+      }
+   }
+}
