@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
@@ -12,6 +14,8 @@ html {
 body {
   height: 100vh;
   width: 100vw;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
   /*<==============
         Section
     ================>*/
@@ -21,60 +25,73 @@ body {
 }
 
 body nav {
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font: 500;
+  width: 100%;
+  height: 8rem;
+  background-color: #203838;
+}
+
+body nav #check {
+  display: none;
+}
+
+body nav .checkbtn {
+  font-size: 2.6rem;
+  float: right;
+  color: #fff;
+  line-height: 8rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+body nav .logo {
+  color: #fff;
+  line-height: 8rem;
   font-size: 1.6rem;
-  border: none;
+  margin: 0 2rem;
 }
 
-body nav .start__button {
-  cursor: pointer;
+body nav ul {
+  top: 0;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  background-color: #8f8686;
 }
 
-body nav .nav__links {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+body nav ul li {
+  margin: 1rem 2rem;
+  line-height: 4rem;
 }
 
-body nav .nav__links li {
-  list-style: none;
-  margin: .5rem;
-}
-
-body nav .nav__links li a {
+body nav ul li a {
   color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  display: inline-block;
 }
 
-body nav .nav__links li a:hover {
-  text-decoration: underline;
-  transition: all 0.5s 0s ease;
-}
-
-body nav button {
+body nav ul button {
   background-color: #f39c12;
   color: #f7f9f9;
   padding: 10px;
   cursor: pointer;
   border-radius: 0.5rem;
   border-style: none;
+  margin: 1rem;
+}
+
+body nav #check:checked ~ ul {
+  left: 0;
 }
 
 body section {
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 body section .container {
+  height: 50%;
+  width: 100%;
   padding: 5rem 2rem;
   background-color: #f8c291;
 }
@@ -122,8 +139,8 @@ body section .container .btn-2 {
 
 body section .image__container img {
   background-color: #4d83da;
-  height: 100vh;
-  width: 100vw;
+  height: 50%;
+  width: 100%;
 }
 
 body .second-section {
@@ -143,43 +160,40 @@ body .second-section .doner-list {
 
 body .second-section .doner-list .doner-first {
   margin: .9rem;
-  width: 20rem;
+  width: 26rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-radius: .5rem;
   box-shadow: 0px 3px 5px 0px rgba(169, 151, 151, 0.75);
 }
 
 body .second-section .doner-list .doner-first img {
-  padding: .1rem;
-  height: 4.4rem;
-  width: 4.4rem;
+  display: block;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin: .5rem 0rem .5rem -.8rem;
   border-radius: .5rem;
 }
 
 body .second-section .doner-list .doner-first .doner-name {
-  display: block;
-  position: relative;
-  padding: 0rem;
-  margin-left: .5rem;
-  margin-top: -1rem;
+  margin-left: -2rem;
+  font-size: 1.4rem;
 }
 
 body .second-section .doner-list .doner-first .doner-city {
-  display: block;
-  position: relative;
-  margin-top: 2rem;
-  margin-left: -9rem;
+  margin-left: -2rem;
+  font-size: 1rem;
 }
 
 body .second-section .doner-list .doner-first .date {
-  display: block;
-  position: relative;
-  margin-left: 7rem;
-  padding: .2rem;
-  border-radius: .3rem;
+  padding: 1rem;
+  border-radius: .8rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
 }
 
 body .second-section .doner-list .doner-first .month {
@@ -195,13 +209,13 @@ body .section-third .events {
 
 body .section-third .events .event-1 {
   box-shadow: 0px 3px 5px 0px rgba(169, 151, 151, 0.75);
-  width: 20rem;
+  width: 25rem;
   margin: 1rem;
 }
 
 body .section-third .events .event-1 img {
   height: 16rem;
-  width: 20rem;
+  width: 25rem;
 }
 
 body .section-third .events .event-1 .title {

@@ -3,9 +3,11 @@
 $fontstack:"Montserrat", sans-serif;
 
 * {
-   box-sizing: border-box;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
 }
 html {
    font-size: 62.5%;
@@ -14,55 +16,80 @@ html {
 body {
    height: 100vh;
    width: 100vw;
+   font-size: 1.6rem;
+   font-family: $fontstack;
+
    nav {
-      border: 2px solid black; 
-      // background-color: rgb(168, 167, 167);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: "Montserrat", sans-serif;
-      font: 500;
-      font-size: 1.6rem;
-      border: none;
+      // border: 2px solid red;
+      width: 100%;
+      height: 8rem;
+      background-color: rgb(32, 56, 56);
 
-      .start__button {
-         cursor: pointer;
+      #check {
+          display: none;
       }
 
-      .nav__links {
-         //  border: 2px solid black;
-         margin: 1rem;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         list-style: none;
-         li {
-            list-style: none;
-            margin: .5rem;
-            a {
-               color: #000;
-               text-decoration: none;
-               cursor: pointer;
-            }
-            a:hover {
-               text-decoration: underline;
-               // padding: .2rem;
-               transition: all 0.5s 0s ease;
-            }
-         }
+      .checkbtn {
+          font-size: 2.6rem;
+          float: right;
+          color: #fff;
+          line-height: 8rem;
+          margin: 0 2rem;
+          cursor: pointer;
+         //  display: none;
       }
 
-      button {
-         background-color: #f39c12;
-         color: #f7f9f9;
-         padding: 10px;
-         cursor: pointer;
-         border-radius: 0.5rem;
-         border-style: none;
+      .logo {
+          // border: 2px solid red;
+          color: #fff;
+          line-height: 8rem;
+          font-size: 1.6rem;
+          margin: 0 2rem;
       }
-   }
+      ul {
+         //  border: 3px solid red;
+          // height: 100vh;
+          // width: 100%;
+          top: 0;
+          position: relative;
+          // float: right;
+          color: #fff;
+          text-transform: uppercase;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+          background-color: rgb(143, 134, 134);
+          // display: flex;
+          // justify-content: space-evenly;
+          // margin: 2rem;
+          
+          li {
+              margin:1rem 2rem;
+              line-height: 4rem;
+              
+              a {
+                  // border: 1px solid #000;
+                  color:#000;
+                  display: inline-block;
+                  // background-color: aquamarine;
+              }
+          }
+
+          button {
+            background-color: #f39c12;
+            color: #f7f9f9;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            border-style: none;
+            margin: 1rem;
+          }
+      }
+
+      #check:checked ~ ul {
+          left: 0;
+      }
+  }
 
    /*<==============
         Section
@@ -70,9 +97,11 @@ body {
 
    section {
       // height: 100vh;
-      /* border: 2px solid red; */
+      border: 2px solid red; 
       .container {
          // width: 50%;
+         height: 50%;
+         width: 100%;
          padding: 5rem 2rem;
          background-color: #f8c291;
          // background-color: #000;
@@ -123,8 +152,8 @@ body {
          
          img {
             background-color: rgb(77, 131, 218) ;
-            height: 100vh;
-            width: 100vw;
+            height: 50%;
+            width: 100%;
         }
       }
 
@@ -147,39 +176,53 @@ body {
          .doner-first {
             // border: 2px solid red;
             margin: .9rem;
-            width: 20rem;
+            width: 26rem;
+            // height: 6rem;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             border-radius: .5rem;
             box-shadow: 0px 3px 5px 0px rgba(169,151,151,0.75);
             img {
-               padding: .1rem;
-               height: 4.4rem;
-               width: 4.4rem;
+               display: block;
+               height: 5.5rem;
+               width: 5.5rem;
+               // // margin: .3rem;
+               margin: .5rem 0rem .5rem -.8rem ;
+               // margin: .5rem 0rem .5rem -11.5rem;
                border-radius: .5rem;
             }
             .doner-name {
-               display: block;
-               position:relative;
-               padding: 0rem;
-               margin-left: .5rem;
-               margin-top: -1rem;
+               // width: 10rem;
+               // border: 1px solid #000;
+               // display: inline-block;
+               // position:relative;
+               // padding: 0rem;
+               margin-left: -2rem;
+               // margin-top: -2rem;
+               font-size: 1.4rem;
             }
             .doner-city {
-               display: block;
-               position: relative;
-               margin-top: 2rem;
-               margin-left: -9rem;
+               // display: block;
+               // position: relative;
+               // margin-top: 2rem;
+               margin-left: -2rem;
+               // margin-right: 6rem;
+               font-size: 1rem;
             }
             .date {
                // border: 1px solid red;
-               display: block;
-               position: relative;
-               margin-left: 7rem;
-               padding: .2rem;
-               border-radius: .3rem;
+               // display: block;
+               // position: relative;
+               // margin-left: 7rem;
+               // margin-right: -8rem;
+               padding: 1rem;
+               border-radius: .8rem;
+               font-size: 1rem;
+               text-align: center;
+               color: #fff;
+               background-color: #000;
             }
             .month {
                display: block;
@@ -202,11 +245,11 @@ body {
             // align-items: center;
             // border: 1px solid red;
             box-shadow: 0px 3px 5px 0px rgba(169,151,151,0.75);
-            width: 20rem;
+            width: 25rem;
             margin: 1rem;
             img {
                height: 16rem;
-               width: 20rem;
+               width: 25rem;
             }
             .title {
                margin: 1rem;
