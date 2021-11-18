@@ -325,27 +325,80 @@ body {
 
 @media (min-width:800px) {
    body {
-      section {
+
+      nav {
+         .checkbtn {
+            // display: none;
+         }
+         ul {
+            // display: block;
+            float: right;
+            // line-height: 8rem;
+            // text-align: none;
+            z-index: 1;
+            background-color: transparent;
+            li {
+               display: inline-block;
+               a {
+                  color: #fff;
+               }
+            }
+         }
+      }
+      .section-one {
          display: flex;
          flex-direction: row;
          .container {
-            height: 100%;
+            border: 1px solid blue;
+            height: 40rem;
             width: 50%;
          }
-         img {
-            height: 100%;
+         .image__container {
+            height: 40rem;
             width: 50%;
+            img {
+               height: 100%;
+               width: 100%;
+            }
          }
+
       }
 
       .second-section {
          display: flex;
-         flex-direction: row;   
-      }
+         flex-direction: column;   
+         justify-content: center;
+         align-items: center;
 
+         .left {
+            display: flex;
+            flex-direction: row;
+         }
+         .right {
+            display: flex;
+            flex-direction: row;
+
+         }
+      }
+      
       .section-third {
+         border: 2px slid red;
          display: flex;
-         flex-direction: row;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         .top {
+            // border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+
+         }
+
+         .bottom {
+            display: flex;
+            flex-direction: row;
+         }
       }
    }
 }

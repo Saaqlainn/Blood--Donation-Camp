@@ -279,23 +279,60 @@ body footer .copyright {
 }
 
 @media (min-width: 800px) {
-  body section {
+  body nav ul {
+    float: right;
+    z-index: 1;
+    background-color: transparent;
+  }
+  body nav ul li {
+    display: inline-block;
+  }
+  body nav ul li a {
+    color: #fff;
+  }
+  body .section-one {
     display: flex;
     flex-direction: row;
   }
-  body section .container {
-    height: 100%;
+  body .section-one .container {
+    border: 1px solid blue;
+    height: 40rem;
     width: 50%;
   }
-  body section img {
-    height: 100%;
+  body .section-one .image__container {
+    height: 40rem;
     width: 50%;
+  }
+  body .section-one .image__container img {
+    height: 100%;
+    width: 100%;
   }
   body .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .second-section .left {
+    display: flex;
+    flex-direction: row;
+  }
+  body .second-section .right {
     display: flex;
     flex-direction: row;
   }
   body .section-third {
+    border: 2px slid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section-third .top {
+    display: flex;
+    flex-direction: row;
+  }
+  body .section-third .bottom {
     display: flex;
     flex-direction: row;
   }
